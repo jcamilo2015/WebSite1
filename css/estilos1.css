@@ -1,0 +1,271 @@
+body {
+  background-color: rgb(235, 235, 235);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 40px auto 70px;
+  align-items: center;
+
+}
+
+header img {
+  width: 40px;
+}
+
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0px 40px;
+}
+
+nav ul li a {
+  color: white;
+
+}
+
+
+a:hover {
+  color: black;
+}
+
+
+#button-ingresar {
+  background-color: rgb(255, 130, 16);
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  height: 40px;
+}
+
+
+#con1 {
+  display: grid;
+  grid-template-columns: auto 250px;
+  grid-template-rows: 1fr;
+  margin: 20px;
+  background: #e0e0e0;
+  float: left;
+  border-radius: 20px;
+  overflow: hidden;
+
+  color: rgb(107, 107, 107);
+  box-shadow: 3px 0px 4px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+article {
+  padding: 20px 20px 0 0;
+}
+
+.barralateral {
+  width: 250px;
+  height: 100%;
+  margin-bottom: 0;
+
+  background: #424242;
+
+  float: right;
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  color: white;
+
+}
+
+aside {
+  width: 250px;
+  height: 500px;
+  margin-top: 0;
+  background: #424242;
+  float: right;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+
+}
+
+.container-buttons {
+  position: relative;
+  top: 50px;
+  /* Ajusta esto según la altura de tu banner */
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.container-buttons i {
+  font-size: 20px;
+}
+
+.container-buttons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.2rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .9);
+  transition: all .5s ease-in-out;
+}
+
+.container-buttons a:hover {
+  transform: translateY(-10px);
+  /* Cambia el valor según tu preferencia */
+}
+
+.container-buttons .two {
+  background-color: #53afff;
+}
+
+.container-buttons .three {
+  background-color: #ff8337;
+}
+
+.container-buttons .four {
+  background-color: #e61c5d;
+}
+
+.container-buttons .five {
+  background-color: #155263;
+}
+
+
+.contenedor1 {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 450px);
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.div-1,
+.div-2,
+.div-3 {
+  background-color: rgb(209, 230, 241);
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.slider {
+  overflow: hidden;
+  margin: 20px;
+
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: cambio 10s infinite alternate linear;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+
+}
+
+#informacionlegal li a {
+  color: white;
+}
+
+#footer {
+  background-color: black;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+#footer a {
+  color: white;
+  font-size: 12px;
+}
+
+#footer p {
+  color: orange;
+  margin: 3px;
+  font-size: 12px;
+
+}
+
+#ser-container {
+  padding: 20px;
+}
+
+table {
+  border: 3px solid rgb(177, 176, 176);
+}
+
+#videos-container {
+  display: grid;
+  grid-template-columns: auto 250px;
+  background-color: rgb(230, 225, 225);
+
+}
+
+#columnas {
+  column-count: 2;
+  column-gap: 20px;
+  column-rule: 4px dotted gray;
+  height: fit-content;
+  max-height: 360px;
+  overflow: auto;
+}
+
+.opiniones {
+  background-color: rgb(209, 230, 241);
+  padding: 20px;
+}
+
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: -300%;
+  }
+}
